@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=430, user-scalable=no, target-density-dpi=device-dpi">
+    <link rel="stylesheet" href="m_sub01.css">
+    <script src="js/m_menu.js" defer></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> 
+  </head>
+
+  <body>
+    <script> 
+        AOS.init(); 
+    </script>
+
+    <header>
+      <nav>
+        <div class="nav_b1"></div>
+        <div class="nav_b2"></div>
+        <div class="logo"><a href="m_index.html"><img src="mimg/m_main/m_logo.png" alt="로고"></a></div>
+        <div class="menu"><img src="mimg/m_main/m_menubutton.png" alt="메뉴"></div>
+      </nav>
+      <div class="nav_menu">
+        <ul>
+          <li><br><br><br><br></li>
+          <li><a href="m_sub01.html">Package&nbsp;&nbsp;</a></li>
+          <li><a href="m_sub02.html">ADVERTISEMENT&nbsp;&nbsp;</a></li>
+          <li><a href="m_sub03.html">IDENTITY&nbsp;&nbsp;</a></li>
+          <li class="li_br"><a href="m_sub04.html">EDITORIAL&nbsp;&nbsp;<br><br></a></li>
+        </ul>
+      </div>
+    </header>
+    <!------------------------------------------------------------>
+
+    <div id="elevator">
+      <div id="door1" class="door"></div>
+      <div id="door2" class="door"></div>
+
+      <script>
+          window.onload = function(){
+              door1.style.width="0px";
+              door2.style.width="0px";
+              elevator.style.opacity="0";
+          }
+      </script>
+    </div>
+    <!------------------------------------------------------------>
+
+    <div class="moveTopBtn"></div>
+    <div class="moveBottomBtn"></div>
+    <script type="text/javascript" src="js/smooth_scroll.js"></script>
+
+    <!------------------------------------------------------------>
+    <section>
+      <div class="wrap">
+        <div class="pbox" data-aos="fade-up"
+        data-aos-duration="2000">
+          <p class="pa">PACKAGE</p>
+          <p class="pb">design</p>
+        </div>
+
+        <div class="scrolldown">
+          <div class="sdtxt"><img src="mimg/m_main/scroll down.png" alt="txt"></div>
+          <div class="sdimg"><img src="mimg/m_main/arrow.png" alt="arrow"></div>
+        </div>
+      </div>
+
+      <div class="blackbg">
+        <div class="blacktext"><p>My package</p><br><p>Design Works 2022</p></div>
+      </div>
+     
+      <div class="wrap1">
+        <div class="bg1"></div>
+        <div class="img" data-aos="zoom-in-up"
+        data-aos-duration="2000"><img src="mimg/m_sub02/m_sub02_1.png" alt="img"></div>
+        <div class="p">
+          <p class="p1">package _ 01</p>
+          <p class="p2">다육식물 패키지 다육이 팜</p>
+          <p class="p3">디자인 트렌드에 맞는 패키지를 제작하는 과제 <br>
+            를 진행하며 코로나 판데믹으로 인해 늘어난 <br>
+            반려식물 트렌드를 선정한 후 다육식물<br> 
+            패키지를 제작하였습니다.</p> 
+            <img src="mimg/m_sub02/m_size1.png" alt="도구 및 크기">
+        </div>
+        <div class="subpackage1_1" data-aos="zoom-in-up"
+        data-aos-duration="2000"><img src="mimg/m_sub02/m_sub02_2.png" alt="패키지"></div>
+        <div class="subpackage1_2" data-aos="zoom-in-up"
+        data-aos-duration="2000"><img src="mimg/m_sub02/m_sub02_3.png" alt="패키지"></div>
+        <div class="bgimg1"></div>
+      </div>
+   
+      <div class="wrap2">
+        <div class="bg2"></div>
+        <div class="img" data-aos="zoom-in-up"
+        data-aos-duration="2000"><img src="mimg/m_sub02/m_sub02_5.png" alt="img"></div>
+        <div class="p">
+          <p class="p1">package _ 02</p>
+          <p class="p2">MZ세대를 위한 티백 패키지</p>
+          <p class="p3">ESG경영에 맞는 패키지를 디자인하며 MZ <br>
+            세대들이 찾지 않는 전통차를 새롭게 디자인<br>
+            하였습니다. 일러스트 프로그램을 사용하여 <br>
+            패턴을 만들고 종류별로 색상을 바꾸어<br>
+             3가지 색상의 패키지를 만들었습니다.</p>
+          <img src="mimg/m_sub02/m_size2.png" alt="도구 및 크기">
+        </div>
+        <div class="subpackage2_1" data-aos="zoom-in-up"
+        data-aos-duration="2000"><img src="mimg/m_sub02/m_sub02_6.png" alt="패키지"></div>
+        <div class="subpackage2_2" data-aos="zoom-in-up"
+        data-aos-duration="2000"><img src="mimg/m_sub02/m_sub02_7.png" alt="패키지"></div>
+        <div class="bgimg2"></div>
+      </div>
+      
+    </section>
+
+    <footer>
+      <img src="mimg/m_main/m_footer.png" alt="footer">
+    </footer>
+
+
+  </body>
+</html>

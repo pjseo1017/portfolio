@@ -1,0 +1,293 @@
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+ }
+ @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+ 
+ *{
+     margin: 0;
+     padding: 0;
+     list-style-type: none;
+     text-decoration: none;
+ }
+ 
+ /*------------------------------------------------------------------*/
+nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 15;
+}
+
+.nav_b1{
+    position: absolute;
+    margin-top: -20px;
+    height: 80px;
+    width: 100%;
+    background-color: #27214B;
+    z-index: 4;
+    border: 0px solid red;
+}
+
+.nav_b2{
+    position: absolute;
+    margin-top: 80px;
+    height: 20px;
+    width: 100%;
+    background-color: #000000;
+    opacity: 25%;
+    z-index: 4;
+}
+
+.logo{
+    z-index: 5;
+    display: inline-block;
+    padding: 28px 35px 35px 35px;
+}
+.menu{
+    z-index: 5;
+    display: inline-block;padding-right: 37px;
+}
+
+header > .nav_menu{
+    position: fixed;
+    display: none;
+    width: 100%;
+    z-index: 3;
+}
+
+header > .nav_menu > ul{
+    display: inline-block;
+    width: 100%;
+    padding: 0px 0px;
+}
+
+header > .nav_menu > ul > li{
+    list-style: none;
+    text-align: right;
+    background-color: #1d1e20;
+    padding: 20px 30px 20px 0px;
+    border-top: 3px solid #1d1e20;
+    margin: -10px -10px;
+}
+
+.li_br{
+    border-radius: 0px 0px 30px 30px;
+}
+
+header > .nav_menu > ul > li > a{
+    font-family: 'Spoqa Han Sans Neo';
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+header > .nav_menu.active{display: flex;}
+
+/*------------------------------------------------------------------*/
+
+
+
+#elevator{
+    display: flex;
+    width: 100%;
+    height: 3px;
+    justify-content: space-between;
+    position: fixed;
+    transition: 6s;
+    z-index: 14;
+ }
+ 
+ 
+ #door1{
+    width: 50vw;
+    transition: 2s;
+    background-position: right;
+    border: 0px solid red;
+    background-image: url(mimg/m_main/door1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+ 
+ #door2{
+    width: 50vw;
+    transition: 2s;
+    background-position: left;
+    border: 0px solid red;
+    background-image: url(mimg/m_main/door2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+ 
+ .door{
+    height: 100vh;
+ }
+/*------------------------------------------------------------------*/
+
+.moveTopBtn {
+    background-image: url(mimg/m_main/up.png);
+    background-size: cover;
+    position: fixed;
+    bottom: 0px;
+    margin-bottom: 70px;
+    right: 0px;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    z-index: 13;
+    opacity: 0.5;
+ }
+ 
+ .moveBottomBtn {
+    background-image: url(mimg/m_main/down.png);
+    background-size: cover;
+    position: fixed;
+    bottom: 0px;
+    margin-bottom: 20px;
+    right: 0px;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    z-index: 13;
+    opacity: 0.5;
+ }
+ 
+ /*------------------------------------------------------------------*/
+
+.wrap{
+    height: 930px;
+    width: 100%;
+    border: 0px solid red;
+    background-image: url(mimg/m_main/m_mainbg.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.pbox{
+    position: absolute;
+    margin-top: 520px;
+    width: 100%;
+    height: 100px;
+    border: 0px solid red;
+    text-align: center;
+}
+
+.p1{
+    font-family: 'yg-jalnan';
+    font-weight: 500;
+    font-size: 50px;
+    color: #ffffff;
+    letter-spacing: 0.03em;
+    line-height: 0;
+    opacity: 80%;
+}
+
+.p2{
+    margin-top: 50px;
+    font-family: 'yg-jalnan';
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffffff;
+    letter-spacing: 0em;
+    line-height: 0;
+    opacity: 50%;
+}
+
+
+.scrolldown{
+    position: absolute;
+    margin-top: 700px;
+    display: inline-block;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid red;
+ }
+ 
+ .sdtxt{
+    height: 20px;
+    border: 0px solid red;
+ }
+ 
+ .sdimg{
+    position: absolute;
+    border: 0px solid red;
+    width: 40px;
+    height: 22px;
+    margin-top: 50;
+ 
+    animation-name: sdani;
+    animation-duration: 6.5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+ }
+ 
+ 
+ @keyframes sdani{
+    0%{
+        margin-top: 100px;
+    }
+    5%{
+       margin-top: 100px;
+   }
+    50%{
+        margin-top: 150px;
+    }
+    95%{
+       margin-top: 100px;
+    }
+    100%{
+        margin-top: 100px;
+    }
+ }
+
+.blackbg{
+    height: 100px;
+    width: 100%;
+    background-color: #1C1C1C;
+    text-align: center;
+    display: flex;
+    z-index: 10;
+}
+
+.blacktext{
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+    border: 0px solid red;
+}
+
+.blackbg > .blacktext > p{
+    font-family: 'yg-jalnan';
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffffff;
+    letter-spacing: 0em;
+    line-height: 10px;
+}    
+
+.profile{
+    height: 1210px;
+    background-image: url(mimg/m_main/m_mainbg_2.png);
+    background-size: cover;
+}
+
+footer{
+    background-color: #343434;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+footer > img{
+    margin-top: 32px;
+}
+
+

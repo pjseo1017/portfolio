@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=430, user-scalable=no, target-density-dpi=device-dpi">
+    <link rel="stylesheet" href="m_sub04.css">
+    <script src="js/m_menu.js" defer></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> 
+  </head>
+
+  <body>
+    <script> 
+        AOS.init(); 
+    </script>
+
+    <header>
+      <nav>
+        <div class="nav_b1"></div>
+        <div class="nav_b2"></div>
+        <div class="logo"><a href="m_index.html"><img src="mimg/m_main/m_logo.png" alt="로고"></a></div>
+        <div class="menu"><img src="mimg/m_main/m_menubutton.png" alt="메뉴"></div>
+      </nav>
+      <div class="nav_menu">
+        <ul>
+          <li><br><br><br><br></li>
+          <li><a href="m_sub01.html">Package&nbsp;&nbsp;</a></li>
+          <li><a href="m_sub02.html">ADVERTISEMENT&nbsp;&nbsp;</a></li>
+          <li><a href="m_sub03.html">IDENTITY&nbsp;&nbsp;</a></li>
+          <li class="li_br"><a href="m_sub04.html">EDITORIAL&nbsp;&nbsp;<br><br></a></li>
+        </ul>
+      </div>
+    </header>
+    <!------------------------------------------------------------>
+
+    <div id="elevator">
+      <div id="door1" class="door"></div>
+      <div id="door2" class="door"></div>
+
+      <script>
+          window.onload = function(){
+              door1.style.width="0px";
+              door2.style.width="0px";
+              elevator.style.opacity="0";
+          }
+      </script>
+    </div>
+    <!------------------------------------------------------------>
+
+    <div class="moveTopBtn"></div>
+    <div class="moveBottomBtn"></div>
+    <script type="text/javascript" src="js/smooth_scroll.js"></script>
+
+    <!------------------------------------------------------------>
+    <section>
+      <div class="wrap">
+        <div class="pbox" data-aos="fade-up"
+        data-aos-duration="2000">
+          <p class="pa">EDITORIAL</p>
+          <p class="pb">design</p>
+        </div>
+
+        <div class="scrolldown">
+          <div class="sdtxt"><img src="mimg/m_main/scroll down.png" alt="txt"></div>
+          <div class="sdimg"><img src="mimg/m_main/arrow.png" alt="arrow"></div>
+        </div>
+      </div>
+
+
+      <div class="blackbg">
+        <div class="blacktext"><p>My editorial</p><br><p>Design Works 2022</p></div>
+      </div>
+      
+      <div class="wrap1">
+        <div class="bg1"></div>
+        <div class="img" data-aos="zoom-in-up"
+        data-aos-duration="2000"><img src="mimg/m_sub04/m_sub04_1.png" alt="img"></div>
+        <div class="p">
+          <p class="p1">editorial _ 01</p>
+          <p class="p2">볼프강 바인가르트 작품집 디자인</p>
+          <p class="p3">그래픽 디자이너 중 볼프강 바인가르트를 <br>
+            선정하여 A5사이즈의 40페이지 분량의 <br>
+            작품집을 디자인하였습니다.<br>
+            포토샵 프로그램과 일러스트레이터 프로그램<br>
+            으로 작업한 후 인디자인 프로그램으로 <br>
+            레이아웃하였습니다.</p> 
+            <img src="mimg/m_sub04/m_size1.png" alt="도구 및 크기">
+        </div>
+        <div class="bgimg1"></div>
+      </div>
+   
+      <div class="wrap2">
+        <div class="bg2"></div>
+        <div class="img" data-aos="zoom-in-up"
+        data-aos-duration="2000"><img src="mimg/m_sub04/m_sub04_3.png" alt="img"></div>
+        <div class="p">
+          <p class="p1">editorial _ 02</p>
+          <p class="p2">Idle 아이돌 잡지 디자인 </p>
+          <p class="p3">아이돌 그룹 중 “Idle”을 선정하여 잡지의 <br>
+            메인 표지와 피처기사, 인터뷰등의 내용으로 <br>
+            40페이지의 잡지를 제작하였습니다.</p>
+          <img src="mimg/m_sub04/m_size2.png" alt="도구 및 크기">
+        </div>
+        <div class="bgimg2"></div>
+      </div>
+
+    </section>
+
+    <footer>
+      <img src="mimg/m_main/m_footer.png" alt="footer">
+    </footer>
+
+
+  </body>
+</html>

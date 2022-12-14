@@ -1,0 +1,90 @@
+    <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="master.css">
+    <script type="text/javascript"> var UserAgent = navigator.userAgent; if (UserAgent.match(/iPhone|ipad|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i) != null || UserAgent.match(/LG|SAMSUNG|Samsung/) != null) { location.href = "m_index.html"; }</script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> 
+</head>
+<body>
+    <script> 
+        AOS.init(); 
+    </script>
+
+    <nav>   
+        <div class="bluebg"></div>
+        <div class="glaybg"></div>
+        <ul class="menubar">
+            <li class="img_m"><a href="index.html"><img src="img/main/logo.png" alt="로고이미지"></a></li>
+            <li class="text_m t1"><a href="sub_01.html">PACKAGE</a></li>
+            <li class="text_m"><a href="sub_02.html">ADVERTISEMENT</a></li>
+            <li class="text_m"><a href="sub_03.html">IDENTITY</a></li>
+            <li class="text_m"><a href="sub_04.html">EDITORIAL</a></li>
+        </ul>
+    </nav>
+    
+    <!------------------------------------------------------------>
+
+    <div id="elevator">
+        <div id="door1" class="door"></div>
+        <div id="door2" class="door"></div>
+
+        <script>
+            window.onload = function(){
+                door1.style.width="0px";
+                door2.style.width="0px";
+                elevator.style.opacity="0.4";
+            }
+        </script>
+    </div>
+    <!------------------------------------------------------------>
+
+    <div class="moveTopBtn"></div>
+    <div class="moveBottomBtn"></div>
+    <script type="text/javascript" src="js/smooth_scroll.js"></script>
+
+    <!------------------------------------------------------------>
+    
+    <div class="mainwrap">
+        <div class="txtbox" data-aos="fade-up"
+        data-aos-duration="2000">
+            <p class="txt1">PORTFOLIO</p>
+            <p class="txt2">My Design Works </p>    
+        </div>
+
+        <div class="scrolldown">
+            <div class="sdtxt"><img src="img/main/scroll down.png" alt="txt"></div>
+            <div class="sdimg"><img src="img/main/arrow.png" alt="arrow"></div>
+        </div>
+    </div>
+
+    <!------------------------------------------------------------>
+    
+    <div class="blacktext">
+        <div class="bt"><p>디자인의 문이 열립니다</p></div>
+    </div>
+    
+    <!------------------------------------------------------------>
+    
+    <div class="bg2"></div>
+    <div class="wrap" data-aos="fade-up"
+        data-aos-duration="2000">
+        <div class="button"></div>
+        <div class="img1"><img src="img/main/img1.png" alt="1"></div>
+        <div class="img2"><img src="img/main/img2.png" alt="2"></div>
+        <div class="img3"><img src="img/main/img3.png" alt="3"></div>
+        <div class="img4"><img src="img/main/img4.png" alt="4"></div> 
+    </div>
+
+    <!------------------------------------------------------------>
+    
+    <footer>
+        <div class="fttxt"><p>Copyright 2022 Park Jun Seo. All rights reserved.</p></div>
+    </footer>
+</body>
+</html>
